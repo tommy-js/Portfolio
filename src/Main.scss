@@ -1,0 +1,187 @@
+@mixin body_main {
+  border: 1px solid red;
+}
+
+$blue: #405173;
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.main_body {
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  @include body_main;
+}
+
+.projects_body {
+  position: relative;
+  width: 100%;
+  @include body_main;
+}
+
+.blogs_body {
+  position: relative;
+  margin-top: 50px;
+  display: flexbox;
+  flex-wrap: wrap;
+  @include body_main;
+}
+
+.blog_post {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 25px;
+  height: 325px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  @include body_main;
+}
+
+.blog_post:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+
+.header {
+  color: #405173;
+  margin: 25px;
+}
+
+.blog_image_box {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.blog_image {
+  position: relative;
+  width: 100%;
+}
+
+.blog_infomation {
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.blog_title {
+  color: #0946c1;
+  font-size: 18px;
+}
+
+.blog_subheader {
+  font-size: 16px;
+  color: black;
+}
+
+.blog_date {
+  font-size: 16px;
+  color: #8bb1ff;
+}
+
+.project_block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 25px;
+  height: 325px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  @include body_main;
+}
+
+.project_block:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+
+.project_image_box {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.project_information {
+}
+
+.project_selector {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+  background-color: teal;
+}
+
+.blog_page_body {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.blog_page_main_image_block {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  @include body_main;
+}
+
+.blog_page_main_image {
+  width: 100%;
+}
+
+.blog_page_title_block {
+  position: relative;
+  width: 1000px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_page_title {
+  font-size: 26px;
+  color: $blue;
+}
+
+.blog_page_text_block {
+  position: relative;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  @include body_main;
+}
+
+.blog_page_text {
+  font-size: 18px;
+  line-height: 165%;
+}
