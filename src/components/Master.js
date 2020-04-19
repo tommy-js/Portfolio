@@ -4,8 +4,8 @@ import Blog from "./blog/Blog";
 import "../Main.scss";
 
 export default class Master extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {};
   }
 
@@ -14,7 +14,7 @@ export default class Master extends Component {
       <div className="main_body">
         <div className="projects_body">
           <h1 className="header">Projects</h1>
-          <Projects />
+          <Projects projectList={this.props.mappingProjects} />
         </div>
         <div className="blogs_body">
           <h1 className="header">Blog</h1>

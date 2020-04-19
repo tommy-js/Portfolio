@@ -1,9 +1,9 @@
 import React from "react";
 import IndividualProject from "./IndividualProject";
-import projectList from "./projectList";
+import { Link } from "react-router-dom";
 import "../../Main.scss";
 
-function Projects() {
+function Projects(props) {
   return (
     <div>
       <div className="project_selector">
@@ -14,7 +14,7 @@ function Projects() {
           <option>Django</option>
         </select>
       </div>
-      {projectList.map(elements => (
+      {props.projectList.map(elements => (
         <IndividualProject title={elements.title} />
       ))}
     </div>

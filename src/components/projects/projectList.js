@@ -11,6 +11,11 @@ const projectList = [
   {
     title: "Undecided Project Title",
     description: "A fullstack webapp designed to easily share and find recipes."
+  },
+  {
+    title: "Another undecided project",
+    description: "",
+    p1: "This project"
   }
 ];
 

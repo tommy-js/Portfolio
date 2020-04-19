@@ -95,18 +95,32 @@ html {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 25px;
   height: 325px;
-  width: 400px;
+  width: 33.3%;
   overflow: hidden;
+  // @include body_main;
+}
+
+.project_container {
+  position: relative;
+  width: 85%;
+  height: 85%;
+  margin-top: 7.5%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   @include body_main;
 }
 
-.project_block:hover {
-  transform: scale(1.05);
+.project_title {
+  width: 100%;
+  text-align: center;
+}
+
+.project_container:hover {
+  transform: scale(1.025);
   transition: 0.5s ease-in-out;
 }
 
@@ -184,4 +198,56 @@ html {
 .blog_page_text {
   font-size: 18px;
   line-height: 165%;
+}
+
+.project_page_block {
+  position: relative;
+  width: 80%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  @include body_main;
+}
+
+.project_page_inner_block {
+  position: relative;
+  width: 60%;
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  @include body_main;
+}
+
+.project_page_image_block {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  @include body_main;
+}
+
+.project_page_image {
+  position: relative;
+  width: 100%;
+}
+
+.project_body_text {
+  font-size: 18px;
+  line-height: 165%;
+  color: #262626;
+}
+
+.code_location_bar {
+  position: relative;
+  width: 100%;
+  @include body_main;
+}
+
+.code_icon_container {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+  @include body_main;
 }
