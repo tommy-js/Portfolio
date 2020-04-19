@@ -2,7 +2,7 @@ import React from "react";
 import BlogPost from "./BlogPost";
 import blogPosts from "./blogPosts";
 
-function Blog() {
+function Blog(props) {
   return (
     <div>
       {blogPosts.map(elements => (
@@ -11,7 +11,7 @@ function Blog() {
           image={elements.image}
           date={elements.date}
           p1={elements.subheader}
-          link={elements.link}
+          keyId={elements.keyId}
         />
       ))}
     </div>

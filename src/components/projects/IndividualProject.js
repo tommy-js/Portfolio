@@ -6,7 +6,7 @@ function IndividualProject(props) {
   return (
     <div className="project_block">
       <div className="project_container">
-        <Link to={"/" + props.title}>
+        <Link to={"/Projects/" + props.id}>
           <div className="project_image_box"></div>
           <div className="project_information">
             <h2 className="project_title">{props.title}</h2>

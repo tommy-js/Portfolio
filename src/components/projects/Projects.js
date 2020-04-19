@@ -15,7 +15,7 @@ function Projects(props) {
         </select>
       </div>
       {props.projectList.map(elements => (
-        <IndividualProject title={elements.title} />
+        <IndividualProject title={elements.title} id={elements.id} />
       ))}
     </div>
   );

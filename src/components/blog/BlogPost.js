@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function BlogPost(props) {
   return (
-    <Link to={props.link}>
+    <Link to={"/Blogs/" + props.keyId}>
       <div className="blog_post">
         <div className="blog_image_box">
           <img className="blog_image" src={props.image} />

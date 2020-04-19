@@ -18,7 +18,7 @@ export default class Master extends Component {
         </div>
         <div className="blogs_body">
           <h1 className="header">Blog</h1>
-          <Blog />
+          <Blog blogList={this.props.mappingBlogs} />
         </div>
       </div>
     );
