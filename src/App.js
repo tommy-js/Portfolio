@@ -7,7 +7,7 @@ import Resume from "./components/Resume";
 import BlogPage from "./components/blog/blog_posts/BlogPage";
 import ProjectPage from "./components/projects/ProjectPage";
 import projectList from "./components/projects/projectList";
-import blogPosts from "./components/blog/blog_posts/postInfo";
+import blogPosts from "./components/blog/blogPosts";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
               image={el.image}
               date={el.date}
               subheader={el.subheader}
+              p1={el.p1}
             />
           </Route>
         ))}

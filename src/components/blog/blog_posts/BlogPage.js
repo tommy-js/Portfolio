@@ -1,15 +1,18 @@
 import React from "react";
 import BlogImage from "../BlogImage";
 import BlogHeader from "../BlogHeader";
+import Date from "../Date";
 import BlogText from "../BlogText";
-import post1 from "./postInfo.js";
+import blogPosts from "../blogPosts.js";
+import "../../../Main.scss";
 
 function BlogPage(props) {
   return (
-    <div>
-      <BlogImage image={post1.image} />
-      <BlogHeader />
-      <BlogText />
+    <div className="main_blog">
+      <BlogImage image={props.image} />
+      <BlogHeader title={props.title} />
+      <Date date={props.date} />
+      <BlogText p1={props.p1} />
     </div>
   );
 }

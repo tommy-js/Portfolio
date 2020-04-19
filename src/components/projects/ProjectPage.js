@@ -9,7 +9,7 @@ function ProjectPage(props) {
         <div className="project_page_image_block">
           <img src="" className="project_page_image" />
         </div>
-        <h1>{props.title}</h1>
+        <h1 className="project_header">{props.title}</h1>
         <div className="code_location_bar">
           <div className="code_icon_container">
             <img src="" className="code_icon" />
@@ -18,7 +18,7 @@ function ProjectPage(props) {
             <img src="" className="code_icon" />
           </div>
         </div>
-        <h2>{props.description}</h2>
+        <h2 className="project_subheader">{props.description}</h2>
         <p className="project_body_text">{props.p1}</p>
       </div>
     </div>
