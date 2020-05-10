@@ -1,26 +1,14 @@
+import projVideo from "../../videos/proj1.mp4";
+
 const projectList = [
   {
-    title: "Honeybee Labs",
-    description: "Ecommerce site for computing systems",
+    title: "Undecided",
+    video: projVideo,
+    description:
+      "Project aimed at providing a service for developers to learn the ropes together.",
+    p1: "this is an experiment",
+    p2: "this is also",
     id: "0"
-  },
-  {
-    title: "MarketCap",
-    description:
-      "A python-based business strategy game where you try to win by gaining control over the market.",
-    id: "1"
-  },
-  {
-    title: "Undecided Project Title",
-    description:
-      "A fullstack webapp designed to easily share and find recipes.",
-    id: "2"
-  },
-  {
-    title: "Another undecided project",
-    description: "",
-    p1: "This project",
-    id: "3"
   }
 ];
 

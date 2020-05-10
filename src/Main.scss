@@ -106,6 +106,8 @@ a {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  min-width: 350px;
+  max-width: 450px;
   height: 325px;
   width: 33.3%;
   overflow: hidden;
@@ -297,4 +299,48 @@ a {
 .project_subheader {
   position: relative;
   margin-left: 10px;
+}
+
+.nav_link {
+  position: relative;
+  margin-left: 15px;
+  font-size: 18px;
+  vertical-align: middle;
+  color: black;
+}
+
+.active_nav_link {
+  color: red;
+}
+
+.project_subtitle {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  position: relative;
+  margin-top: 100px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_header {
+  position: relative;
+  text-align: center;
+}
+
+.project_body_video {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.project_video_page_source {
+  width: 100%;
 }

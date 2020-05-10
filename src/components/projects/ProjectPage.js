@@ -20,6 +20,12 @@ function ProjectPage(props) {
         </div>
         <h2 className="project_subheader">{props.description}</h2>
         <p className="project_body_text">{props.p1}</p>
+        <div className="project_body_video">
+          <video className="project_video_page_source" loop autoPlay muted>
+            <source src={props.video} type="video/mp4" />
+          </video>
+        </div>
+        <p className="project_body_text">{props.p2}</p>
       </div>
     </div>
   );

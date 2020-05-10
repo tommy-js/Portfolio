@@ -14,9 +14,6 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Route exact path="/Contact">
-          <Contact />
-        </Route>
         <Route exact path="/Resume">
           <Resume />
         </Route>
@@ -39,7 +36,9 @@ function App() {
             <ProjectPage
               title={el.title}
               description={el.description}
+              video={el.video}
               p1={el.p1}
+              p2={el.p2}
             />
           </Route>
         ))}

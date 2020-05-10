@@ -6,16 +6,13 @@ import "../../Main.scss";
 function Projects(props) {
   return (
     <div>
-      <div className="project_selector">
-        <label>Technology used</label>
-        <br />
-        <select>
-          <option>React</option>
-          <option>Django</option>
-        </select>
-      </div>
       {props.projectList.map(elements => (
-        <IndividualProject title={elements.title} id={elements.id} />
+        <IndividualProject
+          title={elements.title}
+          subtitle={elements.description}
+          video={elements.video}
+          id={elements.id}
+        />
       ))}
     </div>
   );

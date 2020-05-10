@@ -9,6 +9,7 @@ function Blog(props) {
         <BlogPost
           title={elements.title}
           image={elements.image}
+          video={elements.video}
           date={elements.date}
           p1={elements.subheader}
           keyId={elements.keyId}
